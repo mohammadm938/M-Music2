@@ -1,0 +1,455 @@
+@import "reset.css";
+@font-face {
+  font-family: vazirNormal;
+  src: url("../fonts/vazir.eot");
+  src: url("../fonts/vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir.woff2") format("woff2"),
+    url("../fonts/vazir.woff") format("woff"),
+    url("../fonts/vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  direction: rtl;
+  font-family: vazirNormal;
+  background-color: #f0f0f0;
+}
+input {
+  font-family: vazirNormal;
+}
+#content {
+  position: relative;
+  width: 1212px;
+  margin: auto;
+}
+/* Header */
+
+#header {
+  margin-top: 20px;
+}
+
+#header .logo .titles {
+  /* background-color: green; */
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  right: 10px;
+}
+
+#header .logo .titles h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#header .logo .titles h2 {
+  font-size: 15px;
+}
+
+#header .logo img {
+  width: 90px;
+}
+
+#header .users {
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+
+#header .users .button {
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 3px;
+}
+
+#header .users .login {
+  background-color: #1565ce;
+}
+
+#header .users .login:hover {
+  background-color: #0d47a1;
+}
+
+#header .users .rejester {
+  margin-left: 6px;
+  background-color: #2e7d32;
+}
+
+#header .users .rejester:hover {
+  background-color: #1b5e20;
+}
+#header .search {
+  position: absolute;
+  top: 4px;
+  left: 455px;
+}
+#header .search form .searchBg {
+  display: inline-block;
+  background: #222222;
+  border-radius: 20px;
+  width: 269px;
+  padding: 1px 6px 0px 0px;
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+}
+#header .search form .searchBg #searcBox {
+  background: #222222;
+  border: none;
+  width: 75%;
+  height: 41px;
+  border-radius: 20px;
+  color: #ccc;
+}
+#header .search form .searchBg #searcBox:focus {
+  outline: none;
+}
+#header .search form .searchBg #btnSearch {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 83, 103, 1) 0%,
+    rgba(31, 46, 59, 1) 100%
+  );
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  height: 50px;
+  color: #fff;
+}
+#header .search form .searchBg #btnSearch:hover {
+  cursor: pointer;
+}
+
+/* Nav */
+#nav {
+  width: 1022px;
+  height: 154px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px dashed black;
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+}
+#nav #navUl {
+  padding: 15px;
+}
+#nav #navUl li {
+  display: inline-block;
+  margin: 7px;
+}
+#nav #navUl li img {
+  width: 92px;
+  display: block;
+  border-radius: 10px;
+}
+#nav #navUl li a {
+  position: relative;
+  top: 8px;
+  right: 5px;
+  text-decoration: none;
+  color: black;
+  transition: 0.25s;
+}
+#nav #navUl li a:hover {
+  font-size: 18px;
+  transition: 0.25s;
+}
+/* Section */
+#sections {
+  width: 523px;
+  margin: 35px auto;
+}
+#sections .section {
+  background-color: #fff;
+  height: 645px;
+  border-radius: 7px;
+  margin-top: 35px;
+}
+#sections .section .header {
+  height: 50px;
+  margin: 0.7em 0.7em 0;
+  padding-bottom: 0.7em;
+  border-bottom: 2px solid #e5e5e5;
+}
+#sections .section .header img {
+  width: 57px;
+}
+#sections .section .header h2 {
+  display: inline-block;
+  position: relative;
+  top: -26px;
+  left: -15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#sections .section .content {
+  padding: 5px;
+}
+#sections .section .content .info {
+  width: 503px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+#sections .section .content .info p {
+  line-height: 26px;
+  color: gray;
+}
+#sections .section .content .cover {
+  padding: 5px;
+  text-align: center;
+}
+#sections .section .content .cover img {
+  border-radius: 7px;
+}
+#sections .section .footer div {
+  display: inline-block;
+}
+#sections .section .footer .infoMusic {
+  background: linear-gradient(
+    259deg,
+    rgba(105, 40, 65, 1) 0%,
+    rgba(105, 59, 77, 1) 100%
+  );
+  width: 30.04%;
+  padding: 5px 10px;
+  color: #f0f0f0;
+  overflow: auto;
+  border-radius: 0px 7px 7px 0px;
+  text-align: center;
+  font-size: 12px;
+}
+#sections .section .footer .infoMusic p {
+  line-height: 20px;
+}
+#sections .section .footer .infoMusic .inlineP p {
+  display: inline-block;
+  font-size: 8.5px;
+  position: relative;
+  bottom: -4px;
+}
+#sections .section .footer .infoMusic .inlineP p:nth-child(ODD) {
+  margin-left: 75px;
+}
+#newSongSay {
+  position: relative;
+  top: 3px;
+}
+#sections .section .footer .download {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 83, 103, 1) 0%,
+    rgba(31, 46, 59, 1) 100%
+  );
+  width: 60.4%;
+  height: 30px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-align: center;
+  float: left;
+  position: relative;
+  border-radius: 7px 0px 0px 7px;
+}
+#sections .section .footer .download:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.35);
+}
+#sections .section .footer .download a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 19px;
+  left: 90px;
+  display: inline-block;
+}
+#sections .section .footer .download img {
+  width: 36px;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+}
+/* AsideR */
+#asideR {
+  background-color: #222;
+  position: absolute;
+  background: #222
+    url(https://upmusics.com/wp-content/themes/UpMusics/umimg/umimg.png)
+    no-repeat -1px -241px;
+  top: 309.2px;
+  width: 27.2%;
+  border-radius: 7px;
+}
+#asideR .header {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #111;
+}
+#asideR .header h4 {
+  color: #b8b8b8;
+  font-size: 19px;
+}
+#asideR .header h5 {
+  color: #6c6c6c;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#asideR .content {
+  padding: 10px;
+}
+#asideR .content h3 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 350ms ease-out;
+  font-size: 14px;
+}
+#asideR .content h3 a:hover {
+  transition: all 350ms ease-out;
+  color: #fff;
+}
+#asideR .content li {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-right: 3px solid #613948;
+  border-radius: 2px;
+  display: inline-flex;
+  width: 40%;
+}
+/* AsideL */
+#asideL {
+  position: absolute;
+  top: 309.2px;
+  left: 0;
+  /* background-color: red; */
+  float: left;
+  width: 27.2%;
+  height: 200px;
+}
+#asideL .musicMenu {
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  display: flex;
+  /* text-align: center; */
+  font-size: 15px;
+  padding: 7px;
+  position: relative;
+  font-weight: bold;
+}
+#asideL .musicMenu .asideLA {
+  color: #444;
+  text-decoration: none;
+  position: absolute;
+  top: 18px;
+  right: 80px;
+  transition: 0.25s;
+}
+#asideL .musicMenu a:hover {
+  font-size: 17px;
+  color: black;
+  transition: 0.25s;
+}
+#asideL .musicMenu .iconHeader {
+  width: 40px;
+}
+#asideL .musicMenu .arrowIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -201px;
+  top: 10px;
+  transition: 0.25s;
+}
+#asideL .musicMenu .arrowIcon:hover {
+  transition: 0.25s;
+  left: -210px;
+  cursor: pointer;
+}
+#asideL .vipMusic{
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 4px solid #f0f0f0;
+  position: relative;
+}
+#asideL .vipMusic .headerVip{
+  background-color: RGBA(0,0,0,0.05);
+  border-radius: 0 0 50% 50%;
+  color: #4b4b4b;
+  /* border-radius: 5px 0 0 5px; */
+  border: 4px 4px 0 4px solid #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  width: 301px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#asideL .vipMusic .headerVip h3{
+  font-weight: bold;
+  font-size: 16px;
+}
+#asideL .vipMusic .contentVip{
+  margin-top: 30px;
+  padding: 5px;
+  line-height: 30px;
+}
+#asideL .vipMusic .contentVip ul li a{
+  text-decoration: none;
+  color: #4b4b4b;
+  font-size: 15px;
+}
+#asideL .vipMusic .contentVip ul li a:hover{
+  color: #692841;
+}
+/* Pagination */
+#pagination {
+  /* background-color: red; */
+  direction: ltr;
+  margin: auto auto auto 450px;
+  width: 400px;
+}
+#pagination a {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 13px;
+  width: 20px;
+  height: 10px;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-right: 4px;
+}
+#pagination .current , #pagination a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 83, 103, 1) 0%,
+    rgba(31, 46, 59, 1) 100%
+  );
+  color: #fff;
+}
+#footer{
+  background-color: #111;
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 8px 8px 0 0;
+}
+#footer p{
+  color: #ccc;  
+}
